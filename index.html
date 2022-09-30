@@ -13,7 +13,30 @@
     <header class = "header">
         <h1>Weather Dashboard</h1>
     </header>
+    <div class="container">
+        <div class="row">
+            <form class="" id="city-search-box"><h3>City Search</h3>
+            <button class="primary-button" type="submit">Submit</button>
+            </form>
+            <div class="past-search-border" id="past-search"></div>
+        </div>
+        <div class="search-columns">
+            <div class="selected-city-row" id="current-forecast">
+                <div class="col-12">
+                    <h3 id="searched-city"></h3>
+                    <div class="city-list" id="current-conditions-container"></div>
+                </div>
+                <div class="row-border" id="five-day-forecast">
+                    <h3 class="col-12" id="forecast"></h3>
+                    <div class="days-flex" id="five-day-container"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
+
